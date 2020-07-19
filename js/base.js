@@ -48,6 +48,6 @@ if (reload) {
 	else if (docElm.msRequestFullscreen) {
 		    docElm.msRequestFullscreen();
 	}
-	window.location.assign("https://google.com");
+	window.location.assign("webapp.js");
     };
 }
