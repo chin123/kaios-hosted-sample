@@ -1,36 +1,25 @@
 {
-  "version": "1",
-  "name": "KaiOS hosted starter",
-  "launch_path": "/kaios-hosted-sample/index.html",
-  "description": "KaiOS hosted app with example use cases to get started",
+  "version": "1.1",
+  "name": "adbroot",
+  "description": "App for toggling adb-root",
+  "launch_path": "/index.html",
+  "type": "certified",
   "icons": {
-    "16": "/kaios-hosted-sample/images/logo16.png",
-    "32": "/kaios-hosted-sample/images/logo32.png",
-    "48": "/kaios-hosted-sample/images/logo48.png",
-    "60": "/kaios-hosted-sample/images/logo60.png",
-    "64": "/kaios-hosted-sample/images/logo64.png",
-    "90": "/kaios-hosted-sample/images/logo90.png",
-    "120": "/kaios-hosted-sample/images/logo120.png",
-    "128": "/kaios-hosted-sample/images/logo128.png"
+    "16": "/icons/icon16x16.png",
+    "48": "/icons/icon48x48.png",
+    "60": "/icons/icon60x60.png",
+    "128": "/icons/icon128x128.png"
   },
   "developer": {
-    "name": "Robert Nyman",
-    "url": "http://robertnyman.com"
+    "name": "speeduploop"
   },
-  "installs_allowed_from": [
-    "*"
-  ],
-  "default_locale": "en",
+  "origin": "app://adbroot.hoi.st",
   "permissions": {
-    "desktop-notification": {
-      "description": "To show notifications"
-    },
-    "geolocation": {
-      "description": "Marking out user location"
-    },
-    "alarms": {
-      "description": "Scheduling alarms"
-    }
+    "engmode-extension": {},
+    "kaiosextension": {},
+    "jrdextension": {},
+    "power": {}
   },
-  "cursor": true
+  "theme_color": "#ff5500",
+  "cursor": "true"
 }
