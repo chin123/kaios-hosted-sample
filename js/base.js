@@ -35,6 +35,19 @@ else {
 var reload = document.querySelector("#reload");
 if (reload) {
     reload.onclick = function () {
-        location.reload(true);
+	var docElm = document.documentElement;
+	if (docElm.requestFullscreen) {
+		    docElm.requestFullscreen();
+	}
+	else if (docElm.mozRequestFullScreen) {
+		    docElm.mozRequestFullScreen();
+	}
+	else if (docElm.webkitRequestFullScreen) {
+		    docElm.webkitRequestFullScreen();
+	}
+	else if (docElm.msRequestFullscreen) {
+		    docElm.msRequestFullscreen();
+	}
+	window.location.assign("https://google.com");
     };
 }
